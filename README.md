@@ -16,5 +16,6 @@ pip3 install -r requirements.txt
 
 **Lorsque la led verte s'allume lancer le script de mise à jour**
 
-{% highlight yaml %}
+```
 cc2538-bsl -p socket://zbbridge.local:6638 -evw ../firmware/CC1352P2_CC2652P_launchpad_coordinator_20230507.hex
+```
