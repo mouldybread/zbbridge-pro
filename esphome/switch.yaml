@@ -13,6 +13,7 @@ switch:
       - light.turn_off: blue
       - delay: 1s 
       - switch.turn_on: zigbee_bsl
+      - delay: 1s
       - light.turn_on: green
       - delay: 15s
       - logger.log: "connect your zigbee to ZHA or Zigbee2mqtt"
