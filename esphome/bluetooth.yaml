@@ -4,7 +4,7 @@ esp32_ble_tracker:
     window: 1100ms
 
 logger:
-  evel: VERY_VERBOSE
+  level: VERY_VERBOSE
 
 # esp32_ble_beacon:
 #   type: iBeacon
