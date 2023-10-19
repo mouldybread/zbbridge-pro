@@ -21,6 +21,24 @@ binary_sensor:
       then:
         - switch.turn_on: fwupdate
 
+  - platform: gpio
+    pin: 
+      number: 27
+      inverted: True
+    name: "inclusive key zigbee"
+    internal: True
+    device_class: update
+    on_click:
+      min_length: 1s
+      max_length: 3s
+      then:
+        - switch.turn_on: reboot
+    on_double_click:
+      min_length: 50ms
+      max_length: 350ms
+      then:
+        - switch.turn_on: ikzigbee
+
   - platform: stream_server
     connected:
       name: Connected from PC

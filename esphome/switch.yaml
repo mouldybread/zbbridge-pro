@@ -8,7 +8,7 @@ switch:
 
   - platform: template
     name: "${friendly_name} zigbee key connect"
-    id: fwupdate
+    id: ikzigbee
     turn_on_action:
       - light.turn_off: blue
       - delay: 1s 
