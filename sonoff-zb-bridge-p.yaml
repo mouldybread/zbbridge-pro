@@ -15,6 +15,10 @@ captive_portal:
 
 ota:
   password: !secret zbbridge_ota_password
+
+api:
+  encryption:
+    key: !secret enc_key_zbbridge
   
 packages:
   remote-packages:
@@ -24,6 +28,7 @@ packages:
     files: [
       esphome/esphome.yaml,
       esphome/binary_sensor.yaml,
+      esphome/bluetooth.yaml,
       esphome/light.yaml,
       esphome/output.yaml,
       esphome/rtttl.yaml,

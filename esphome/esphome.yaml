@@ -17,8 +17,6 @@ logger:
   baud_rate: 0
 
 api:
-  encryption:
-    key: !secret enc_key_zbbridge
   reboot_timeout: 0s
 
 ota:
