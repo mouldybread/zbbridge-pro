@@ -7,7 +7,7 @@ switch:
     icon: "mdi:restart"
 
   - platform: template
-    name: "${friendly_name} fw update"
+    name: "${friendly_name} firmware update"
     id: fwupdate
     turn_on_action:
       - light.turn_off: blue
