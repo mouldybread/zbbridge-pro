@@ -1,0 +1,39 @@
+substitutions:
+  devicename: zbbridge
+  friendly_name: zb-bridge-pro
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: ${devicename}_ap
+    password: !secret zbbridge_ap_password
+
+captive_portal:
+
+ota:
+  password: !secret zbbridge_ota_password
+  
+packages:
+  remote-packages:
+    url: https://github.com/haade-administrator/zbbridge-pro.git
+    ref: main
+    refresh: 0s
+    files: [
+      esphome/esphome.yaml,
+      esphome/binary_sensor.yaml,
+      esphome/light.yaml,
+      esphome/output.yaml,
+      esphome/rtttl.yaml,
+      esphome/sensor.yaml,
+      esphome/output.yaml,
+      esphome/switch.yaml,
+      esphome/text_sensor.yaml,
+      esphome/uart.yaml,
+      esphome/stream_server.yaml,
+   ]  
+
+external_components:
+  - source: github://oxan/esphome-stream-server

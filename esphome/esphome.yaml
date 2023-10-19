@@ -1,0 +1,26 @@
+esphome:
+  name: ${devicename}
+  on_boot:
+    priority: 800
+    then:
+      - rtttl.play: 'long:d=1,o=5,b=100:e6'
+      - delay: 4s 
+      - light.turn_on: blue
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+logger:
+  level: DEBUG
+  baud_rate: 0
+
+api:
+  encryption:
+    key: !secret enc_key_zbbridge
+  reboot_timeout: 0s
+
+ota:
+
+captive_portal:

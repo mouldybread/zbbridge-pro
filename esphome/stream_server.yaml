@@ -1,0 +1,3 @@
+stream_server:
+  uart_id: uart_zb
+  port: 6638
