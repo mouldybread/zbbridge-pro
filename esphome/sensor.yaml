@@ -1,14 +1,15 @@
 sensor:
 
+# internal temperature of efp32
+
   - platform: internal_temperature
     name: "Internal Temperature"
+
+# battery voltage zbbridge
 
   - platform: adc
     name: "Battery voltage"
     pin: GPIO32
-
-  - platform: internal_temperature
-    name: "Internal Temperature"
 
   - platform: uptime
     name: "${friendly_name} Actif"

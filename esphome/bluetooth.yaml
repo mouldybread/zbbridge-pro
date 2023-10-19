@@ -1,3 +1,5 @@
+# Choose between bluetooth tracker or bluetooth ibeacon
+
 # esp32_ble_tracker:
 #   scan_parameters:
 #     interval: 1100ms
