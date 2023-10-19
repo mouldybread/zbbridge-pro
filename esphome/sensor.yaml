@@ -12,8 +12,8 @@ sensor:
     pin: GPIO32
 
   - platform: uptime
-    name: "${friendly_name} Actif"
-    id: ${devicename}_actif
+    name: "${friendly_name} Activ"
+    id: ${devicename}_activ
     update_interval: 60s
     internal: True
     on_raw_value:
@@ -21,7 +21,7 @@ sensor:
         - text_sensor.template.publish:
             id: ${devicename}_uptime_human
             state: !lambda |-
-              int seconds = round(id(${devicename}_actif).raw_state);
+              int seconds = round(id(${devicename}_activ).raw_state);
               int days = seconds / (24 * 3600);
               seconds = seconds % (24 * 3600);
               int hours = seconds / 3600;
