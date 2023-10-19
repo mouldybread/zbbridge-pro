@@ -3,9 +3,9 @@ esp32_ble_tracker:
     interval: 1100ms
     window: 1100ms
 
-  logger:
-    level: VERY_VERBOSE
+logger:
+  evel: VERY_VERBOSE
 
-esp32_ble_beacon:
-  type: iBeacon
-  uuid: 'd60687e1-cfd2-cd0e-843c-07e2e28870b4'
+# esp32_ble_beacon:
+#   type: iBeacon
+#   uuid: 'd60687e1-cfd2-cd0e-843c-07e2e28870b4'

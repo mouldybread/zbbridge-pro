@@ -3,6 +3,13 @@ sensor:
   - platform: internal_temperature
     name: "Internal Temperature"
 
+  - platform: adc
+    name: "Battery voltage"
+    pin: GPIO32
+
+  - platform: internal_temperature
+    name: "Internal Temperature"
+
   - platform: uptime
     name: "${friendly_name} Actif"
     id: ${devicename}_actif
