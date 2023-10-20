@@ -12,7 +12,10 @@ switch:
     turn_on_action:
       - switch.turn_on: zigbee_bsl
       - light.turn_on: green
-
+      - delay: 10s
+      - switch.turn_off: zigbee_bsl
+      - light.turn_off: green
+      
   - platform: template
     name: "${friendly_name} zigbee reset"
     id: zrst
