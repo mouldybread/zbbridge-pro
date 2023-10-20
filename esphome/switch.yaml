@@ -7,6 +7,24 @@ switch:
     icon: "mdi:restart"
 
   - platform: template
+    name: "${friendly_name} zigbee bsl"
+    id: zbsl
+    turn_on_action:
+      - switch.turn_on: zigbee_bsl
+      - light.turn_on: green
+
+  - platform: template
+    name: "${friendly_name} zigbee reset"
+    id: zrst
+    turn_on_action:
+      - switch.turn_on: zigbee_rst
+      - light.turn_on: blue
+      - delay: 2s
+      - switch.turn_off: zigbee_rst
+      - light.turn_off: blue
+
+
+  - platform: template
     name: "${friendly_name} firmware update"
     id: fwupdate
     turn_on_action:
