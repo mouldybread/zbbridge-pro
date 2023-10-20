@@ -7,7 +7,7 @@ switch:
     icon: "mdi:restart"
 
   - platform: template
-    name: "${friendly_name} firmware update"
+    name: "${friendly_name} fw update"
     id: fwupdate
     turn_on_action:
       - light.turn_off: blue
@@ -17,16 +17,14 @@ switch:
       - switch.turn_on: zigbee_rst
       - delay: 1s
       - switch.turn_off: zigbee_rst
-      - delay: 10s
-      - switch.turn_off: zigbee_bsl 
-      - light.turn_on: green
-      - logger.log: "Please try update with cc-bsl tool now"
-      - logger.log: "cc-bsl usage: cc-bsl.py -p socket://ip-of-gw:6638 -evw firmware.hex"
-      - logger.log: "please try to write fw on ip:6638, if a error of Timeout waiting for ACK/NACK after 'Synch (0x55 0x55)' repeat with fw update"
-      - delay: 30s
-      - light.turn_off: green
-      - delay: 5s
       - light.turn_on: blue
+      - logger.log: "wait for fw update"
+      - delay: 12s
+      - light.turn_on: green
+      - switch.turn_off: zigbee_bsl 
+      - logger.log: "please try to write fw on ip:6638, if a error of Timeout waiting for ACK/NACK after 'Synch (0x55 0x55)' repeat with fw update"
+      - delay: 15s
+      - light.turn_off: green
 
   - platform: gpio
     id: zigbee_rst
