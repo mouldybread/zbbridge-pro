@@ -3,3 +3,4 @@ uart:
   rx_pin: GPIO23
   tx_pin: GPIO19
   baud_rate: 115200
+  rx_buffer_size: 512
