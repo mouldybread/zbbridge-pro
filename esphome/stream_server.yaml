@@ -1,3 +1,4 @@
 stream_server:
   uart_id: uart_zb
   port: 6638
+  buffer_size: 2048
