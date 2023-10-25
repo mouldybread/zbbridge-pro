@@ -22,7 +22,7 @@ switch:
       - light.turn_on: green
       - switch.turn_off: zigbee_bsl 
       - logger.log: "please try to write fw on ip:6638, if a error of Timeout waiting for ACK/NACK after 'Synch (0x55 0x55)' repeat with fw update"
-      - delay: 15s
+      - delay: 30s
       - light.turn_off: green
       - delay: 5s
       - light.turn_on: blue
