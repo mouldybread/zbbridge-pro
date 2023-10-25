@@ -17,7 +17,6 @@ switch:
       - switch.turn_on: zigbee_rst
       - delay: 1s
       - switch.turn_off: zigbee_rst
-      - light.turn_on: blue
       - logger.log: "wait for fw update"
       - delay: 12s
       - light.turn_on: green
@@ -25,6 +24,8 @@ switch:
       - logger.log: "please try to write fw on ip:6638, if a error of Timeout waiting for ACK/NACK after 'Synch (0x55 0x55)' repeat with fw update"
       - delay: 15s
       - light.turn_off: green
+      - delay: 5s
+      - light.turn_on: blue
 
   - platform: gpio
     id: zigbee_rst
