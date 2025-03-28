@@ -1,3 +1,5 @@
+This fork disables the ble-tracker
+
 Repository of hack gateway sonoff zbbridge-p pro with esphome for work on Home assistant, with upgrade of zigbee firmware
 
 [tutorial of installation in esphome](https://haade.fr/fr/blog/flasher-zbbridge-pro-esphome-home-assistant)
