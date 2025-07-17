@@ -1,7 +1,7 @@
 output:
   - platform: gpio
     pin: 
-      ignore_strapping_warning: True
+ #     ignore_strapping_warning: True
       number: GPIO21
     inverted: True
     id: status_bls
