@@ -30,6 +30,7 @@ switch:
   - platform: gpio
     id: zigbee_rst
     pin: 15
+    ignore_strapping_warning: True
     name: "Zigbee RST"
     inverted: true
     internal: true
