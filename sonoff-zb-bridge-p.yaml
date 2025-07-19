@@ -48,7 +48,6 @@ packages:
       esphome/output.yaml,
       esphome/rtttl.yaml,
       esphome/sensor.yaml,
-      esphome/output.yaml,
       esphome/switch.yaml,
       esphome/text_sensor.yaml,
       esphome/uart.yaml,
