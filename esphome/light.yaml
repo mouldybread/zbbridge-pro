@@ -4,6 +4,7 @@ light:
     name: "Blue"
     id: blue
     pin: 
+      ignore_strapping_warning: true
       number: GPIO2
       inverted: true
     internal: True

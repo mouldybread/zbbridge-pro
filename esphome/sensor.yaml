@@ -3,7 +3,7 @@ sensor:
 # internal temperature of efp32
 
   - platform: internal_temperature
-    name: "Internal Temperature"
+    name: "Internal Temperature C"
 
 # battery voltage zbbridge
 
