@@ -135,4 +135,18 @@ packages:
       esphome/stream_server.yaml,
    ]
 ```
-  
+## GPIO Configuration
+
+ + 2 = blue led
+ +  4 = buzzer
+ +  13
+ +  14
+ +  15 = zRST
+ +  23 = rx zigbee
+ +  21 = green led
+ +  22 = boot
+ +  19 = tx zigbee
+ +  25 = scl
+ +  26 = sda
+ +  27 = button key
+ +  33
