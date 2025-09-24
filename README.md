@@ -68,7 +68,7 @@ The sands of time have done a number on this and no one place has all the answer
 
 You can now install the ESP Home binary that you've compiled from this repo.
 ## Repo Structure
-As you may have noticed the author of this configuration nested it into many separate includes and I have chosen to keep that structure and the remote includes. You can of course just copy and paste it all into your devices configuration.
+The original author of this configuration nested it into many separate includes and I have chosen to keep that structure along with the remote includes. You can of course just copy and paste it all into your devices configuration.
 ## Full configuration
 Here is my full working configuration
 ```
