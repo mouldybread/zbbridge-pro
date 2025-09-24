@@ -54,7 +54,7 @@ The sands of time have done a number on this and no one place has all the answer
 * Replace them with the new versions that you downloaded
 * REBOOT THE DEVICE
 * Go to Tasmota Device -> Tools -> Berry Console
-* Utter the following incanation:
+* Utter the following incantion:
   ```
   import sonoff_zb_pro_flasher as cc
   cc.load("SonoffZBPro_coord_20240710.hex")
