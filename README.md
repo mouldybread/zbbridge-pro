@@ -1,6 +1,6 @@
 # ESPHome for the Sonoff ZBBridge Pro
 
-This fork disables the ble-tracker, removes firware related files and switches to esp-idf.
+This fork removes bluetooth and the ble tracker, removes firware related files and switches to esp-idf.
 
 Disabling bluetooth and antenna sharing seems to improve esp32 response times.
 
