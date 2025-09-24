@@ -1,14 +1,14 @@
-ESPHome for the Sonoff ZBBridge Pro
+#ESPHome for the Sonoff ZBBridge Pro
 
 This fork disables the ble-tracker, removed firware related stuff, and switched to esp-idf.
 
-Sisabling bluetooth and antenna sharing seems to improve esp32 response times.
+Disabling bluetooth and antenna sharing seems to improve esp32 response times.
 
 The radio firmware needs to be modified for this device to work with ESPHome. This can be achieved by flashing the Sonoff software for this device. Follow their instructions to do so.
 
 See the original version of this software for alternative ways to flash the radio.
 
-Essentials:
+## Essentials:
 ```
 external_components:
   - source: github://oxan/esphome-stream-server
