@@ -42,7 +42,7 @@ packages:
    ]
 ```
 ## Flashing:
-The sands of time have done a number on this and no one place has all the answers. The Sonoff Zigbee Bridge Pro is very well supported by Tasmota. I still prefer ESPHome so I did the following to flash the radio before I installed esphome:
+The sands of time have done a number on this and no one place has all the answers. Even the official docs link to outdated guides. The Sonoff Zigbee Bridge Pro is very well supported by Tasmota. I still prefer ESPHome so I did the following to flash the radio before I installed esphome:
 
 * Install [tasmota32-zbbrdgpro.factory.bin](https://ota.tasmota.com/tasmota32/release/tasmota32-zbbrdgpro.factory.bin) using [Install Tasmota](https://tasmota.github.io/install/)
 > [!NOTE]
@@ -150,3 +150,19 @@ packages:
  +  26 = sda
  +  27 = button key
  +  33
+
+# References
+https://www.zigbee2mqtt.io/advanced/remote-adapter/connect_to_a_remote_sonoff_zbbridge.html
+
+https://github.com/arendst/Tasmota/discussions/18515
+
+https://digiblur.com/2020/07/25/how-to-use-the-sonoff-zigbee-bridge-with-home-assistant-tasmota/
+
+https://notenoughtech.com/home-automation/tasmota-on-sonoff-zb-bridge-pro/
+
+https://github.com/arendst/Tasmota/issues/22765
+
+https://zigbee.blakadder.com/Sonoff_ZBBridge-P.html
+
+https://github.com/haade-administrator/zbbridge-pro
+
